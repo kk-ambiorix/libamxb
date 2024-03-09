@@ -1,0 +1,10 @@
+variables:
+  TEST_DEPS: libamxo
+  DOC_GEN_CMD: "make doc"
+  BUILD_DEPS: libamxc=1.10.2 libamxp=1.4.0 libamxd=6.4.0 liburiparser-dev
+  BUILD_TARGET: libamxb
+
+
+include:
+  - remote: 'https://gitlab.com/soft.at.home/ci/gitlab-ci/raw/main/ambiorix-default-pipeline.yml'
+
